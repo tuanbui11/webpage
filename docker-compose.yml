@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+
+  webpage-demo-v2:
+    image: webpage-demo-v2:latest
+    container_name: tuanbui-lab-docker-compose
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
