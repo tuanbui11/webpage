@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("tuanbui11/webpage")
+        app = docker.build("webpage-demo-v2")
     }
 
     stage('Test image') {
