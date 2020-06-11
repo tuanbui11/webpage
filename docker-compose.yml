@@ -1,9 +1,12 @@
-version: "3.0"
+version: "3.8"
 
 services:
-
-  webpage-demo-v2:
-    image: webpage-demo-v2:latest
+  # build: "/Users/tuanbui/Documents/2.Kobiton/kobiton-project/tuanbui-test/webpage/Dockerfile"
+  #   context: .
+  #   dockerfile: Dockerfile
+  #   # name: webpage-demo-v3
+  web:
+    image: webpage-demo-v1:latest
     container_name: tuanbui-lab-docker-compose
     ports:
       - "80:80"
